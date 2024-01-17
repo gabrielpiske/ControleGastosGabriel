@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - Controle de Gastos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../global.css"/>
+        <link rel="stylesheet" href="../../index.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <script src="../../validations.js"></script>
+        <script src="../../loading.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+        <script src="firebase-init.js"></script>
+        <script src="../../firebase-init.js"></script> 
+        <script src="register.js"></script>
+    </head>
+    <body class="centralize">
+        <form>
+            <div>
+                <h1>Registro</h1>
+                <h2>Controle de Gastos</h2>
+            </div>
+            <div class="form-field">
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+                <div class="error" id="email-required-error">Email é Obrigatótio.</div>
+                <div class="error" id="email-invalid-error">Email é Inválido.</div>
+            </div>
+            <div class="form-field">
+                <label>Senha:</label>
+                <input type="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+                <div class="error" id="password-required-error">Senha é Obrigatória.</div>
+                <div class="error" id="password-min-length-error">Senha deve ter pelo menos 6 caracteres.</div>
+            </div>
+            <div class="form-field">
+                <label>Confirmar Senha:</label>
+                <input type="password" id="confirmPassword" placeholder="Confirmar Senha" onchange="onChangeConfirmPassword()"/>
+                <div class="error" id="password-doesnt-match-error">Senha e Confirmar Senha devem ser iguais.</div>
+            </div>
+            <div class="form-field">
+                <button type="button" class="solid" onclick="register()">Registrar</button>
+            </div>
+            <div class="form-field">
+                <button type="button" class="outline" onchange="validatePasswordMatch()">Login</button>
+            </div>
+        </form>
+    </body>
+</html>

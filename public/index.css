@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    /*    background: rgb(00, 93, 170); azul senai*/
+    background: rgb(76,58,180);
+    background: linear-gradient(291deg, rgba(76,58,180,1) 0%, rgba(29,127,253,1) 50%, rgba(69,97,252,1) 100%);
+    color: white;
+    height: 100vh;
+    font-family: Montserrat;
+}
+form{
+    width: 400px;
+}
+button{
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+.form-field{
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+h1, h2, h3{
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    width: -webkit-fill-available;
+    border-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: transparent;
+    border-left: solid #b8d3f6 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+}
+
+::placeholder{
+    color: #87baff;
+}
